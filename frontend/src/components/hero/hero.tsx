@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 // Mantine
 import { BackgroundImage } from "@mantine/core"
 
-export default function HomeComponent() {
+export default function Hero() {
     //
 
     return (

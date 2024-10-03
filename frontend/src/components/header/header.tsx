@@ -9,12 +9,12 @@ import { Menu, Button } from "@mantine/core"
 // Tabler Icons
 import { IconSnowflake, IconFlame, IconBolt, IconEngine, IconHeartHandshake } from "@tabler/icons-react"
 
-export default function HeaderComponent() {
+export default function Header() {
     return (
         <main>
             {/* Title */}
-            <div className="text-center grid grid-cols-1 bg-gradient-to-r from-bison-green to-green-800 py-8 sm:py-8">
-                <div className="border-2 border-bison-yellow text-bison-yellow font-extrabold text-2xl sm:text-5xl shadow-xl rounded-lg px-4 py-4 sm:px-8 sm:py-4">
+            <div className="text-center grid grid-cols-1 bg-bison-green py-8 sm:py-8">
+                <div className="text-bison-yellow font-extrabold text-2xl sm:text-4xl px-4 sm:px-8">
                     Welcome to Bison Motorsports
                 </div>
             </div>

@@ -2,9 +2,9 @@
 "use client"
 
 // Components
-import HeaderComponent from "@/components/header/header"
-import HomeComponent from "@/components/home/home"
-import FooterComponent from "@/components/footer/footer"
+import Header from "@/components/header/header"
+import Hero from "@/components/hero/hero"
+import Footer from "@/components/footer/footer"
 
 // React
 import { useState, useEffect } from "react"
@@ -23,13 +23,10 @@ export default function Page() {
   return (
     <main className="relative">
       <div className="absolute top-0 left-0 right-0 z-20 bg-white bg-opacity-80 backdrop-blur-lg shadow-md">
-        <HeaderComponent />
+        <Header />
       </div>
       <div className="relative z-10">
-        <HomeComponent />
-      </div>
-      <div className="z-20 bg-white bg-opacity-80 backdrop-blur-lg shadow-md">
-        <FooterComponent />
+        <Hero />
       </div>
     </main>
   )

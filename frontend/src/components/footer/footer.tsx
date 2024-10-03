@@ -4,11 +4,11 @@
 import { useState } from "react"
 
 // Mantine
-import { Menu, Button, rem } from "@mantine/core"
+import { Menu, Button } from "@mantine/core"
 
 // Tabler Icons
 
-export default function FooterComponent() {
+export default function Footer() {
     return (
         <main>
             te
