@@ -1,7 +1,7 @@
 "use client"
 
 // React
-import { useState, useEffect } from "react"
+import { Link } from "react-scroll"
 
 // Cogs
 import Cog from "./cogs/cog"
@@ -19,6 +19,7 @@ export default function Hero() {
 
   return (
     <div 
+      id="hero"
       className="h-[100vh] flex items-center justify-center relative overflow-hidden bg-cover bg-center" 
       style={{ backgroundImage: "url('/images/general/hero.jpg')" }}
     >
@@ -32,21 +33,32 @@ export default function Hero() {
       {/* Content */}
       <Container size="md" className="relative z-10">
         <Title c="white">Welcome to the Bison Motorsports website</Title>
-        <Text size="xl" mt="xl" c="white">
+        <Text 
+          size="xl" 
+          mt="xl" 
+          c="white"
+        >
           something about the club here
         </Text>
 
-        <Button 
-          classNames={{ inner: "text-bison-yellow text-lg md:text-xl" }}
-          variant="filled"
-          color="#005643"
-          size="xl" 
-          radius="md"
-          mt="xl"
-          rightSection={<IconArrowDown size={25} />}
+        <Link
+          to="content"
+          smooth={true}
+          duration={1000}
+          className="w-full cursor-pointer"
         >
-          Learn more
-        </Button>
+          <Button 
+            classNames={{ inner: "text-bison-yellow text-lg md:text-xl" }}
+            variant="filled"
+            color="#005643"
+            size="xl" 
+            radius="md"
+            mt="xl"
+            rightSection={<IconArrowDown size={25} />}
+          >
+            Learn more
+          </Button>
+        </Link>
       </Container>
 
       {/* Always visible cogs */}
