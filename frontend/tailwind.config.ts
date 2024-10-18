@@ -8,9 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        "bison-green": "#005643",
+        "bison-yellow": "#FFC82E",
+        "bison-white": "#DAD2D8",
+      },
+      animation: {
+        spin: "spin 30s linear infinite",
+      },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

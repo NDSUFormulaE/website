@@ -1,5 +1,7 @@
-// Import styles of packages that you've installed.
-// All packages except `@mantine/hooks` require styles imports
+// Global CSS
+import "./globals.css"
+
+// Mantine
 import "@mantine/core/styles.css"
 import { ColorSchemeScript, MantineProvider } from "@mantine/core"
 
