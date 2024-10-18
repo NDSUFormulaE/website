@@ -11,10 +11,12 @@
   "dependencies": {
     "@mantine/core": "^7.11.0",
     "@mantine/hooks": "^7.11.0",
+    "@svgr/webpack": "^8.1.0",
+    "@tabler/icons-react": "^3.19.0",
     "@types/mongodb": "^4.0.7",
     "frontend": "file:",
     "mongodb": "^6.9.0",
-    "next": "14.2.4",
+    "next": "^14.2.15",
     "react": "^18",
     "react-dom": "^18"
   },
