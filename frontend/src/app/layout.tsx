@@ -3,6 +3,7 @@ import "./globals.css"
 
 // Mantine
 import "@mantine/core/styles.css"
+import "@mantine/carousel/styles.css"
 import { ColorSchemeScript, MantineProvider } from "@mantine/core"
 
 export const metadata = {

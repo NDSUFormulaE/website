@@ -2,25 +2,27 @@
 "use client";
 
 // React
-import { Link } from "react-scroll";
+import { Link } from "react-scroll"
 
 // Mantine
-import { Image, Group, Burger, Drawer, ScrollArea, Stack } from "@mantine/core";
-import { useDisclosure } from '@mantine/hooks';
+import { Image, Group, Burger, Drawer, Stack } from "@mantine/core"
+import { useDisclosure } from "@mantine/hooks"
 
 export default function Navbar() {
   // Sections that we can navigate to
   const sections = [
     { id: "hero", displayName: "Home" },
-    { id: "content", displayName: "Teams" },
-    { id: "footer", displayName: "Contact" },
-  ];
+    { id: "teams", displayName: "Teams" },
+    { id: "leads", displayName: "Leadership" },
+    { id: "sponsors", displayName: "Sponsors" },
+    { id: "footer", displayName: "Info" }
+  ]
 
   // Toggle the burger menu
-  const [opened, { toggle, close }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false)
 
   return (
-    <div id="navbar" className=" sticky top-0">
+    <div id="navbar" className="sticky top-0 z-50">
       <div className="border-b-2 border-bison-yellow">
         <Group className="bg-gradient-to-r from-bison-green to-[#185036] justify-between items-center px-4">
           {/* Logo and title */}
@@ -28,7 +30,7 @@ export default function Navbar() {
             <Image  
               src="images/general/logo.png" 
               alt="Bison Motorsports logo" 
-              className="h-[7vh] w-[7vh] object-contain"
+              className="h-[60px] w-[60px] object-contain"
             />
             <div className="text-2xl font-semibold md:text-4xl text-bison-yellow ml-2">
               Bison Motorsports
@@ -47,6 +49,7 @@ export default function Navbar() {
                     duration={750}
                     className="relative font-semibold transition-colors duration-300 text-xl md:text-2xl cursor-pointer hover:text-bison-yellow after:content-[''] after:block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-bison-yellow after:transition-all after:duration-300 hover:after:w-full"
                     activeClass="text-bison-yellow"
+                    offset={-59}
                   >
                     {section.displayName}
                   </Link>

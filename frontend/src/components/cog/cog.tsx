@@ -1,13 +1,15 @@
-// Cog
-
 // Define props for Cog
 interface CogProps {
     color: string,
     width: number,
-    height: number
+    height: number,
+    rpm: number
 }
 
-export default function Cog({ color, width, height }: CogProps) {
+export default function Cog({ color, width, height, rpm }: CogProps) {
+    // Calculate rotation duration in seconds
+    const rotationDuration = 60 / rpm
+    
     return (
         <svg 
             version="1.0" 
@@ -17,6 +19,7 @@ export default function Cog({ color, width, height }: CogProps) {
             viewBox="0 0 1280.000000 1280.000000"
             preserveAspectRatio="none"
             className="animate-spin"
+            style={{ animationDuration: `${rotationDuration}s` }}
         >
             <g 
                 transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"

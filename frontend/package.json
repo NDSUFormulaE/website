@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.13.3",
     "@mantine/core": "^7.11.0",
     "@mantine/hooks": "^7.11.0",
     "@svgr/webpack": "^8.1.0",
     "@tabler/icons-react": "^3.19.0",
     "@types/mongodb": "^4.0.7",
+    "embla-carousel-autoplay": "^7.1.0",
+    "embla-carousel-react": "^7.1.0",
     "frontend": "file:",
     "mongodb": "^6.9.0",
     "next": "^14.2.15",
