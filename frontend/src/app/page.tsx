@@ -2,22 +2,18 @@
 "use client"
 
 // Components
-import Header from "@/components/header/header"
 import Hero from "@/components/hero/hero"
-
-// Mantine
-import { Container } from "@mantine/core"
-import Head from "next/head"
+import Navbar from "@/components/navbar/navbar"
+import Content from "@/components/content/content"
+import Footer from "@/components/footer/footer"
 
 export default function Home() {
-  // 
-
   return (
     <main>
       <Hero />
-      <div className="">
-        <Header />
-      </div>
+      <Navbar />
+      <Content />
+      <Footer />
     </main>
   )
 }
