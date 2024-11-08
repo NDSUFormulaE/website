@@ -35,7 +35,7 @@ export default function Hero() {
 
       {/* Content */}
       <Container size="md" className="relative z-10">
-        <Title c="white">Welcome to the Bison Motorsports website.</Title>
+        <Title c="white">Bison Motorsports</Title>
         <Text 
           size="xl" 
           mt="xl" 
@@ -106,15 +106,6 @@ export default function Hero() {
       </div>
 
       {/* Even more cogs for 2xl screens */}
-      {/* Middle right */}
-      <div className="hidden 2xl:block absolute right-[-400px] opacity-55">
-        <Cog 
-          color={bisonYellow} 
-          width={550}
-          height={550}
-          rpm={rpm}
-        />
-      </div>
       {/* Bottom left */}
       <div className="hidden 2xl:block absolute bottom-[-100px] left-[-400px] opacity-55">
         <Cog 

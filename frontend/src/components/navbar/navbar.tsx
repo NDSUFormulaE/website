@@ -13,9 +13,8 @@ export default function Navbar() {
   const sections = [
     { id: "hero", displayName: "Home" },
     { id: "teams", displayName: "Teams" },
-    { id: "leads", displayName: "Leadership" },
-    { id: "sponsors", displayName: "Sponsors" },
-    { id: "footer", displayName: "Info" }
+    { id: "leadership", displayName: "Leadership" },
+    { id: "sponsors", displayName: "Sponsors" }
   ]
 
   // Toggle the burger menu
